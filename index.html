@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - About</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    a img:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Sticky Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Sticky Navbar End -->
+
+
+  <!-- About Section Start -->
+  <section class="container text-center my-5" id="about">
+    <h2 class="mb-4 fw-bold">About</h2>
+
+    <!-- Profile Photo -->
+    <img src="images/about/1.jpg" alt="Profile Photo" class="profile-photo mb-4" />
+
+    <!-- About Text -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p>
+          Hi! I’m Manmita Sahoo — a Robotics and AI engineering student with a deep interest in the world of data and automation. 
+          My journey began with building intelligent systems, but over time I found myself increasingly drawn to the power of 
+          data in driving decisions, optimizing workflows, and revealing insights that might otherwise go unnoticed. 
+          With strong foundations in Python, SQL, Power BI, and Excel, I’ve developed dashboards and analytics pipelines that 
+          not only look good — they work hard, delivering clarity, context, and measurable impact.
+        </p>
+        <p>
+          Coming from a Robotics background gives me a unique edge as a data analyst. I understand how systems behave, 
+          how processes can be automated, and how predictive models can be designed to solve real-world problems. 
+          I thrive at the intersection of data, logic, and innovation. I'm quick to adapt 
+          to new tools, constantly exploring AI and analytics technologies that can help 
+          businesses move faster and smarter.
+            
+          I see data as a conversation starter — a way to ask better questions, solve problems creatively, and build solutions 
+          that matter. And I’m always excited to take on new challenges that help me learn, grow, and make a difference through data.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+  <!-- Projects Section Start -->
+    <section class="container my-5" id="projects">
+    <h2 class="text-center mb-4 fw-bold">Projects</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- Project Card 1 -->
+        <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="images/projects/1.jpeg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+            <h5 class="card-title">Walmart Global Supply Chain Command Dashboard</h5>
+            <p class="card-text">
+                Developed a multi-module dashboard using Streamlit and Power BI to monitor and optimize global supply chain operations. 
+                Integrated MySQL and Python for real-time analytics, predictive forecasting, and KPI tracking to support executive decisions.
+            </p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="images/projects/2.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+            <h5 class="card-title">Global Sales Intelligence Dashboard for Strategic Portfolio Insights</h5>
+            <p class="card-text">
+                Built an interactive Power BI dashboard to visualize financial and sales performance across countries and product segments. 
+                Featured dynamic charts, geo maps, and drill-down filters to support strategic business decisions with clear, actionable insights.
+            </p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="images/projects/3.avif" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+            <h5 class="card-title">Enterprise Financial KPI Monitoring Dashboard for Executive Reporting</h5>
+            <p class="card-text">
+                Designed a financial dashboard in Power BI to monitor KPIs like profit, revenue, and margins. 
+                Integrated time-series analysis, KPI cards, and interactive filters to provide real-time insights and support strategic forecasting.
+            </p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </section>
+<!-- Projects Section End -->
+    <!-- Skills Section Start -->
+<section class="container my-5" id="skills">
+  <h2 class="text-center mb-5 fw-bold">Skills</h2>
+
+  <div class="row text-center justify-content-center g-4">
+    
+    <!-- Skill 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <img src="images/skills/1.jpg" class="img-fluid mb-3" alt="Python" style="height: 80px;">
+      <h5 class="fw-bold">Python</h5>
+      <p class="text-muted small mb-2">General-purpose programming for data tasks</p>
+      <p class="px-2">
+        Proficient in Python for data analysis, automation, and building machine learning pipelines. 
+        Experienced in libraries like Pandas, NumPy, and Seaborn for effective data handling and visualization.
+      </p>
+    </div>
+
+    <!-- Skill 2 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <img src="images/skills/3.jpeg" class="img-fluid mb-3" alt="Data Visualization" style="height: 80px;">
+      <h5 class="fw-bold">Data Visualization</h5>
+      <p class="text-muted small mb-2">Conveying insights through reports and visuals</p>
+      <p class="px-2">
+        Skilled in Power BI to design interactive dashboards and visual reports. 
+        Capable of transforming raw data into meaningful insights using charts, filters, and KPIs.
+      </p>
+    </div>
+
+    <!-- Skill 3 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <img src="images/skills/2.jpeg" class="img-fluid mb-3" alt="SQL" style="height: 80px;">
+      <h5 class="fw-bold">SQL</h5>
+      <p class="text-muted small mb-2">Querying databases to retrieve meaningful data</p>
+      <p class="px-2">
+        Strong command of SQL for querying, managing, and analyzing large datasets. 
+        Familiar with joins, subqueries, and performance optimization in relational databases.
+      </p>
+    </div>
+
+    <!-- Skill 4 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <img src="images/skills/4.jpeg" class="img-fluid mb-3" alt="Data Storytelling" style="height: 80px;">
+      <h5 class="fw-bold">MS Excel</h5>
+      <p class="text-muted small mb-2">Powerful tool for organizing, analyzing, and visualizing data</p>
+      <p class="px-2">
+        Experienced in MS Excel for data cleaning, pivot tables, and formulas. 
+        Utilize Excel for quick data summaries, trend analysis, and reporting tasks.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- Skills Section End -->
+<!-- Contact Me Section Start -->
+<section class="py-5" style="background-color: #000; color: white;" id="contact">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Contact Me</h2>
+
+    <!-- Email and Phone -->
+    <div class="mb-4">
+      <p class="mb-1">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/new-post.png" class="me-2" alt="Email Icon" />
+        <span>manmita.sahoo@gmail.com</span>
+      </p>
+      <p>
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" class="me-2" alt="Phone Icon" />
+        <span>9989511288</span>
+      </p>
+    </div>
+
+    <!-- Social Icons Row -->
+<div class="row justify-content-center g-4">
+  
+  <!-- LinkedIn -->
+  <div class="col-4 col-md-2">
+    <a href="https://www.linkedin.com/in/manmitasahoo/" target="_blank">
+      <img src="https://img.icons8.com/fluency/96/linkedin.png" class="img-fluid" alt="LinkedIn Icon" />
+    </a>
+    <p class="mt-2">LinkedIn</p>
+  </div>
+
+  <!-- Twitter -->
+  <div class="col-4 col-md-2">
+    <a href="https://x.com/Manmita_Sahoo" target="_blank">
+      <img src="https://img.icons8.com/fluency/96/twitter.png" class="img-fluid" alt="Twitter Icon" />
+    </a>
+    <p class="mt-2">Twitter</p>
+  </div>
+
+  <!-- GitHub -->
+  <div class="col-4 col-md-2">
+    <a href="https://github.com/ManmitaSahoo" target="_blank">
+      <img src="https://img.icons8.com/fluency/96/github.png" class="img-fluid" alt="GitHub Icon" />
+    </a>
+    <p class="mt-2">GitHub</p>
+
+
+    </div>
+  </div>
+</section>
+<!-- Contact Me Section End -->
+
+  <!-- Bootstrap JS (optional for interactivity) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
